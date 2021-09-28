@@ -37,12 +37,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build
-        run: ./gradlew -Prelease.useLastTag=true final -x test
-      
-      - run: ls -la 
-      - run: ls -la devschool-front-app-server
-      - run: ls -la devschool-front-app-server/build
-      - run: ls -la devschool-front-app-server/build/libs
+        run: ./gradlew -Prelease.useLastTag=true build final -x test
       
       - name: Docker
         uses: docker/build-push-action@v2
