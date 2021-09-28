@@ -39,6 +39,11 @@ jobs:
       - name: Build
         run: ./gradlew -Prelease.useLastTag=true final -x test
       
+      - run: ls -la 
+      - run: ls -la devschool-front-app-server
+      - run: ls -la devschool-front-app-server/build
+      - run: ls -la devschool-front-app-server/build/libs
+      
       - name: Docker
         uses: docker/build-push-action@v2
         with:
