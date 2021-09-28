@@ -1,3 +1,6 @@
+[![ci-build](https://github.com/to4kin/dev-school-front-app/actions/workflows/ci-build.yml/badge.svg?branch=main)](https://github.com/to4kin/dev-school-front-app/actions/workflows/ci-build.yml)
+[![GitHub release](https://img.shields.io/github/release/to4kin/dev-school-front-app.svg)](https://GitHub.com/to4kin/dev-school-front-app/releases/)
+
 # dev-school-front-app
 Frontend part of dev school application.
 
