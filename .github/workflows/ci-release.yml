@@ -43,6 +43,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
+          context: .
           build-args: APP_VERSION=${{ steps.get_version.outputs.APP_VERSION }}
           tags: ${{ secrets.DOCKER_REGISTRY }}/dev-school-front-app:latest,${{ secrets.DOCKER_REGISTRY }}/dev-school-front-app:${{ steps.get_version.outputs.APP_VERSION }}
 
