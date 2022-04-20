@@ -7,32 +7,32 @@ Frontend part of dev school application.
 ## Installation
 ### Precondition
 List of required tools:
-<ul>
-    <li>NODE v14.15.0</li>
-    <li>Yarn v1.22.11</li>
-    <li>Gradle v6.7.1 or gradlew</li>
-    <li>Java 8</li>
-</ul>
+
+* NODE v14.15.0
+* Yarn v1.22.11
+* Gradle v6.7.1 or gradlew
+* Java 8
 
 ### Build
 
 Use gradle inside root folder for app build.
 
 ```bash
-gradlew jar
+gradlew build
 ```
 
 ## Deploy
 
 By default deployable JAR file can be found in
 ```bash
-\dev-school-front-app\devschool-front-app-server\build\libs
+devschool-front-app-server/build/libs
 ```
 
 Simple deploy can be done by java jar command.
 ```bash
 java -jar devschool-front-app-server-1.0.0.jar
 ```
+
 Possible deploy flags:
 ```bash
 -port=<port> port of application deploy
