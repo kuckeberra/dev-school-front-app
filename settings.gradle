@@ -1,5 +1,3 @@
 rootProject.name = "devschool-front-app"
 include 'devschool-front-app-server'
 include 'devschool-front-app-client'
-
-enableFeaturePreview("GRADLE_METADATA")
